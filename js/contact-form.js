@@ -217,11 +217,13 @@ function submitForm(form) {
         const successMessage = document.createElement('div');
         successMessage.className = 'success-message';
         successMessage.innerHTML = `
-            <div style="text-align: center; padding: 40px 20px;">
-                <i class="fas fa-check-circle" style="font-size: 4rem; color: #28a745; margin-bottom: 20px;"></i>
+            <div class="success-content">
+                <div class="success-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
                 <h3>Thank You!</h3>
                 <p>Your message has been sent successfully. We'll get back to you as soon as possible.</p>
-                <button id="resetForm" class="btn btn-primary" style="margin-top: 20px;">Send Another Message</button>
+                <button id="resetForm" class="btn btn-primary">Send Another Message</button>
             </div>
         `;
         
