@@ -17,6 +17,50 @@
     box-shadow: var(--shadow-md);
     overflow: hidden;
     transition: transform 0.3s ease;
+    padding: var(--spacing-xl);
+}
+
+.partner-content h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.5rem;
+}
+
+.partner-type {
+    color: var(--text-dark);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+}
+
+.partner-website a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.partner-focus {
+    margin: var(--spacing-md) 0;
+}
+
+.partner-about h4, .partner-contributions h4 {
+    color: var(--text-dark);
+    margin: var(--spacing-md) 0 var(--spacing-sm);
+}
+
+.partner-contributions ul {
+    list-style: none;
+    padding-left: var(--spacing-md);
+}
+
+.partner-contributions ul li {
+    margin-bottom: var(--spacing-xs);
+    position: relative;
+}
+
+.partner-contributions ul li:before {
+    content: "•";
+    color: var(--primary-color);
+    position: absolute;
+    left: -1rem;
 }
 
 .partner-card:hover {

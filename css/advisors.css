@@ -17,6 +17,34 @@
     box-shadow: var(--shadow-md);
     overflow: hidden;
     transition: transform 0.3s ease;
+    padding: var(--spacing-xl);
+}
+
+.advisor-content h3 {
+    color: var(--primary-color);
+    margin-bottom: var(--spacing-xs);
+    font-size: 1.5rem;
+}
+
+.advisor-content h4 {
+    color: var(--text-dark);
+    margin-bottom: var(--spacing-md);
+    font-size: 1.2rem;
+}
+
+.advisor-role, .advisor-focus {
+    color: var(--text-medium);
+    margin-bottom: var(--spacing-sm);
+}
+
+.advisor-bio {
+    margin: var(--spacing-md) 0;
+    line-height: 1.6;
+}
+
+.advisor-expertise {
+    color: var(--text-medium);
+    font-style: italic;
 }
 
 .advisor-card:hover {
