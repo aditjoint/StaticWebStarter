@@ -1583,15 +1583,28 @@ footer {
     margin: 0;
 }
 
+.contact-info {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
 .contact-info li {
-    display: flex;
-    margin-bottom: var(--spacing-md);
+    margin-bottom: var(--spacing-sm);
+}
+
+.contact-info li {
+    color: rgba(255, 255, 255, 0.7);
+    transition: color var(--transition-fast);
+}
+
+.contact-info li:hover {
     color: var(--white);
 }
 
 .contact-info li i {
     margin-right: var(--spacing-sm);
-    color: var(--white);
+    color: rgba(255, 255, 255, 0.7);
 }
 
 .footer-bottom {
