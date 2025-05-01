@@ -228,7 +228,7 @@ header {
     align-items: center;
     text-decoration: none;
 }
-#logo {
+.logo-icon {
   background-image: url("logo.png");
 }
 .logo-icon {
