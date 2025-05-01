@@ -229,12 +229,9 @@ header {
     text-decoration: none;
 }
 .logo-icon {
-  background-image: url("logo.png");
-}
-.logo-icon {
     background-color: var(--primary-color);
-    width: 30px;
-    height: 30px;
+    width: 100px;
+    height: 100px;
     border-radius: 4px;
     display: flex;
     align-items: center;
