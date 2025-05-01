@@ -1,44 +1,68 @@
-<style>
-  section {
-    padding: 2rem;
-  }
-
-  .card-container {
-    display: flex;
-    gap: 1rem;
-    flex-wrap: wrap;
-  }
-
-  .card {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 300px;
-    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-  }
-
-  .card h3 {
-    margin-top: 0;
-  }
-</style>
-@media (max-width: 768px) {
-  .card-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card {
-    width: 90%;
-  }
+/* Header Dropdown Styling */
+.dropdown {
+  position: relative;
 }
-.card:hover {
-  transform: scale(1.02);
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
-  transition: all 0.3s ease-in-out;
+.dropdown > a {
+  cursor: pointer;
 }
-.card p {
-  font-size: 0.95rem;
-  color: #333;
-  line-height: 1.4;
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  padding: 0.5rem 0;
+  list-style: none;
+  min-width: 160px;
+  z-index: 1000;
+}
+.dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 0.5rem 1rem;
+}
+.dropdown:hover .dropdown-menu {
+  display: block;
 }
 
+/* Footer Links */
+.footer-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 1rem 0;
+  margin: 0;
+}
+.footer-links li a {
+  color: #ccc;
+  text-decoration: none;
+}
+.footer-links li a:hover {
+  color: #fff;
+}
+
+<h2>Latest News</h2>
+<div class="card-container">
+  <div class="card">
+    <h3>News Title</h3>
+    <p>Short description of the news item.</p>
+    <a href="#">Read More</a>
+  </div>
+
+  <!-- Duplicate .card for more entries -->
+</div>
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  padding: 1rem;
+}
+.card {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 6px;
+  width: calc(33% - 2rem);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.card h3 {
+  margin-top: 0;
+}
