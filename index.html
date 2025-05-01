@@ -233,28 +233,6 @@
             </div>
         </div>
     </section>
-<script>
-  // Toggle mobile dropdowns
-  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
-    toggle.addEventListener('click', function (e) {
-      e.preventDefault(); // Prevent default link behavior
-      const parent = this.closest('.dropdown');
-      parent.classList.toggle('open');
-    });
-  });
-
-  // Optional: close dropdown when clicking outside
-  document.addEventListener('click', function (e) {
-    document.querySelectorAll('.dropdown').forEach(dropdown => {
-      if (!dropdown.contains(e.target)) {
-        dropdown.classList.remove('open');
-      }
-    });
-  });
-</script>
-
-</body>
-</html>
 
     <!-- Services Overview Section -->
 <section class="services-overview">
@@ -513,5 +491,25 @@
     <!-- Scripts -->
     <script src="js/main.js"></script>
     <script src="js/dropdown.js"></script>
+<script>
+  // Toggle mobile dropdowns
+  document.querySelectorAll('.dropdown-toggle').forEach(toggle => {
+    toggle.addEventListener('click', function (e) {
+      e.preventDefault(); // Prevent default link behavior
+      const parent = this.closest('.dropdown');
+      parent.classList.toggle('open');
+    });
+  });
+
+  // Optional: close dropdown when clicking outside
+  document.addEventListener('click', function (e) {
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+      if (!dropdown.contains(e.target)) {
+        dropdown.classList.remove('open');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
