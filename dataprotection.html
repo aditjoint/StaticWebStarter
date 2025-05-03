@@ -1,25 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo">
-                    <a href="../index.html">
-                        <div class="logo-icon">
-                            <span class="letter">A</span>
-                        </div>
-                        <span class="logo-text">ADAM Consult</span>
-                    </a>
-                </div>
-                <div class="cta-button">
-                    <a href="../contact.html" class="btn btn-primary">Get In Touch</a>
-                </div>
-                <div class="mobile-menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
-
+<head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Data Protection Policy | ADAM Consult</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -28,38 +13,100 @@
       padding: 0;
       color: #333;
     }
+
     .container {
-      max-width: 900px;
+      max-width: 960px;
       margin: auto;
-      background-color: #fff;
       padding: 2rem;
+      background-color: #fff;
       box-shadow: 0 0 12px rgba(0, 0, 0, 0.06);
     }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+    }
+
+    .logo-icon {
+      background-color: #2b4f81;
+      color: #fff;
+      font-weight: bold;
+      padding: 0.4rem 0.8rem;
+      border-radius: 4px;
+      margin-right: 0.5rem;
+    }
+
+    .logo-text {
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #2b4f81;
+    }
+
+    .btn-primary {
+      background-color: #2b4f81;
+      color: #fff;
+      padding: 0.6rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
     h1, h2 {
       color: #2b4f81;
     }
+
     h1 {
       border-bottom: 2px solid #ddd;
       padding-bottom: 0.5rem;
     }
+
     p {
       margin: 1rem 0;
     }
+
     ul {
       margin: 0.5rem 0 1.5rem 2rem;
     }
+
     footer {
       text-align: center;
       font-size: 0.9rem;
       color: #777;
-      margin-top: 2rem;
+      margin: 2rem 0 1rem;
     }
-    a {
-      color: #2b4f81;
+
+    .mobile-menu-toggle {
+      display: none;
     }
   </style>
+</head>
+<body>
 
   <div class="container">
+    <!-- Header -->
+    <div class="header-content">
+      <div class="logo">
+        <a href="../index.html" class="logo">
+          <div class="logo-icon"><span class="letter">A</span></div>
+          <span class="logo-text">ADAM Consult</span>
+        </a>
+      </div>
+      <div class="cta-button">
+        <a href="../contact.html" class="btn-primary">Get In Touch</a>
+      </div>
+      <div class="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+
+    <!-- Main Content -->
     <h1>Data Protection Policy</h1>
     <p><strong>Last updated:</strong> March 31, 2025</p>
 
@@ -101,7 +148,7 @@
       <li>Compliance with a legal obligation</li>
       <li>Protection of vital interests of the data subject</li>
       <li>Performance of a task carried out in the public interest</li>
-      <li>Legitimate interests pursued by the controller, except where such interests are overridden by the interests, rights, or freedoms of the data subject</li>
+      <li>Legitimate interests pursued by the controller</li>
     </ul>
 
     <h2>5. Data Protection Officer</h2>
@@ -115,10 +162,15 @@
     </p>
 
     <h2>7. Data Security</h2>
-    <p>We implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including:</p>
-   </p>
-  </header>
-    </script>
+    <p>
+      We implement appropriate technical and organizational measures to ensure a level of security appropriate to the risk, including but not limited to access controls, encryption, regular audits, and staff training.
+    </p>
+
+    <!-- Footer -->
+    <footer>
+      &copy; 2025 ADAM Consult. All rights reserved.
+    </footer>
+  </div>
+
 </body>
 </html>
-
