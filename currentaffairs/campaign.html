@@ -113,20 +113,8 @@
   <!-- Footer -->
   <div id="footer-placeholder"></div>
 
-  <script>
-    fetch('../includes/footer.html') // Adjust path if needed
-      .then(response => {
-        if (!response.ok) throw new Error('Network response was not ok');
-        return response.text();
-      })
-      .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-      })
-      .catch(error => {
-        console.error('Error loading footer:', error);
-      });
-  </script>
-
+  <a href="../footer.html" class="btn btn-primary">.</a>
+  
   <!-- Scripts -->
   <script src="../js/main.js"></script>
   <script src="../js/dropdown.js"></script>
