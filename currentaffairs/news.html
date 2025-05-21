@@ -1,179 +1,250 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ADAM Consult - News & Digital Transformation</title>
-  <meta name="description" content="Explore ADAM Consult's digital transformation services, news, certifications, and more.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ADAM Consult - Your Trusted Partner in Engineering, Infrastructure, and Digital Growth</title>
+  <meta name="description" content="We provide integrated solutions across Static Machinery, Equipment, Energy Distribution and Metering, IT and Non-IT Facility Infrastructure, Digital Transformation (Telecom, IT, and Industrial Automation), Strategic Consulting, and Product Marketing.">
 
-  <!-- Stylesheets -->
-  <link rel="stylesheet" href="../css/styles.css">
-  <link rel="stylesheet" href="../css/responsive.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- External Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css" />
+  <link rel="stylesheet" href="css/responsive.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
 
+  <!-- Inline Custom Style Fixes -->
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      color: #333;
     }
+
+    header {
+      background-color: #fff;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .header-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 0;
+    }
+
+    .logo-text {
+      font-size: 24px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      color: #333;
+    }
+
+    .main-nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 20px;
+    }
+
+    .main-nav a {
+      font-weight: 500;
+      font-size: 16px;
+      color: #333;
+      text-decoration: none;
+    }
+
+    .main-nav a:hover {
+      color: #007BFF;
+    }
+
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: white;
+      padding: 10px;
+      border: 1px solid #ddd;
+      list-style: none;
+    }
+
+    .dropdown:hover .dropdown-menu {
+      display: block;
+    }
+
+    .btn-primary {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px 20px;
+      border-radius: 4px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      background-color: #0056b3;
+    }
+
     .news-section {
-      background-color: #ffffff;
+      background-color: #fff;
       padding: 50px 20px;
       text-align: center;
-      border-bottom: 5px solid #eee;
     }
+
+    .news-section h2 {
+      font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 40px;
+    }
+
     .news-article {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      margin: 0 auto 40px auto;
-      padding: 20px;
       background-color: #f9f9f9;
       border: 1px solid #ddd;
       border-radius: 8px;
       max-width: 800px;
+      margin: 0 auto 40px;
+      padding: 20px;
+      text-align: left;
     }
+
     .news-article h3 {
       font-size: 24px;
-      margin-bottom: 10px;
+      font-weight: 700;
       color: #007BFF;
+      margin-bottom: 10px;
     }
+
     .news-article p {
       font-size: 18px;
+      line-height: 1.6;
       color: #555;
       margin-bottom: 20px;
-      line-height: 1.6;
     }
-    .btn-primary {
-      color: #fff;
-      background-color: #007BFF;
-      padding: 10px 20px;
-      border-radius: 5px;
-      text-decoration: none;
-      font-weight: bold;
-      transition: background 0.3s ease;
+
+    .news-article ul {
+      padding-left: 20px;
+      text-align: left;
     }
-    .btn-primary:hover {
-      background-color: #0056b3;
+
+    .news-article img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .mobile-menu-toggle {
+      display: none;
     }
   </style>
 </head>
 <body>
 
-<header>
-  <div class="container">
-    <div class="header-content">
-      <div class="logo">
-        <a href="../index.html">
-          <div class="logo-icon"><span class="letter">A</span></div>
-          <span class="logo-text">ADAM Consult</span>
-        </a>
-      </div>
-      <nav class="main-nav">
-        <ul class="nav-links">
-          <li><a href="../index.html">Home</a></li>
-          <li><a href="../about.html">About</a></li>
-          <li class="dropdown">
-            <a href="#">Consult Service <i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="../services/technology-infrastructure.html">Technology Infrastructure</a></li>
-              <li><a href="../services/digital-transformation.html">Digital Transformation</a></li>
-              <li><a href="../services/sustainability-solutions.html">Sustainability Solutions</a></li>
-              <li><a href="../services/process-automation.html">Process Automation</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#">Current Affairs <i class="fas fa-chevron-down"></i></a>
-            <ul class="dropdown-menu">
-              <li><a href="../currentaffairs/news.html">News</a></li>
-              <li><a href="../currentaffairs/campaign.html">Campaigns</a></li>
-              <li><a href="../currentaffairs/events.html">Events</a></li>
-              <li><a href="../currentaffairs/projects.html">Projects</a></li>
-            </ul>
-          </li>
-        </ul>
-      </nav>
-      <div class="cta-button">
-        <a href="../contact.html" class="btn btn-primary">Get In Touch</a>
+  <!-- Header Section -->
+  <header>
+    <div class="container">
+      <div class="header-content">
+        <div class="logo">
+          <a href="index.html" class="logo-text">ADAM Consult</a>
+        </div>
+        <nav class="main-nav">
+          <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown">
+              <a href="#">Consult Service <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="services/technology-infrastructure.html">Technology Infrastructure</a></li>
+                <li><a href="services/digital-transformation.html">Digital Transformation</a></li>
+                <li><a href="services/sustainability-solutions.html">Sustainability Solutions</a></li>
+                <li><a href="services/process-automation.html">Process Automation</a></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#">Current Affairs <i class="fas fa-chevron-down"></i></a>
+              <ul class="dropdown-menu">
+                <li><a href="currentaffairs/news.html">News</a></li>
+                <li><a href="currentaffairs/campaign.html">Campaigns</a></li>
+                <li><a href="currentaffairs/events.html">Events</a></li>
+                <li><a href="currentaffairs/projects.html">Projects</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+        <div class="cta-button">
+          <a href="contact.html" class="btn btn-primary">Get In Touch</a>
+        </div>
       </div>
     </div>
-  </div>
-</header>
+  </header>
 
-<section class="news-section">
-  <h2>News / Latest Recommendations / Advertise</h2>
+  <!-- News Section -->
+  <section class="news-section">
+    <h2>News / Latest Recommendations / Advertise</h2>
 
-  <div class="news-article">
-    <h3>Utkal Electrotechnic – Industrial Electromagnetic Solutions</h3>
-    <p>Specialized products for power and automation sectors built with precision and durability.</p>
-    <ul>
-      <li>Instrument Transformers</li>
-      <li>Indoor Current Transformers (CTs)</li>
-      <li>Indoor Voltage Transformers (VTs)</li>
-    </ul>
-    <a href="/Utkal Electrotechnic2.png" target="_blank">
-      <img src="Utkal Electrotechnic2.png" alt="Utkal Electrotechnic Screenshot" style="max-width:100%; height:auto; border-radius:8px;">
-    </a>
-    <div><a href="../contact.html" class="btn btn-primary">Contact Us</a></div>
-  </div>
+    <div class="news-article">
+      <h3>Utkal Electrotechnic – Industrial Electromagnetic Solutions</h3>
+      <p>Specialized products for power and automation sectors built with precision and durability.</p>
+      <p>Our range includes:</p>
+      <ul>
+        <li>Instrument Transformers</li>
+        <li>Indoor Current Transformers (CTs)</li>
+        <li>Indoor Voltage Transformers (VTs)</li>
+      </ul>
+      <p>All products are reliable and meet international standards.</p>
+      <img src="Utkal Electrotechnic2.png" alt="Utkal Electrotechnic Screenshot" />
+      <br /><br />
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
 
-  <div class="news-article">
-    <h3>ISO Certification Services</h3>
-    <p>Helping you achieve global standards in Quality and Information Security</p>
+    <div class="news-article">
+      <h3>ISO Certification Services</h3>
+      <p>Helping you achieve global standards in Quality and Information Security.</p>
 
-    <h3>ISO 9001: Quality Management System</h3>
-    <p>Deliver consistent, high-quality products and services with operational excellence.</p>
+      <h3>ISO 9001: Quality Management System</h3>
+      <p>Deliver consistent, high-quality products and enhance customer satisfaction.</p>
 
-    <h3>ISO 27001: Information Security Management</h3>
-    <p>Protect sensitive data and comply with international standards.</p>
+      <h3>ISO 27001: Information Security Management</h3>
+      <p>Protect sensitive data and build trust through certified security practices.</p>
 
-    <p><strong>Indian MSME customers:</strong> For free initial consulting (open till June 2025), email us to book a session.</p>
-    <a href="../contact.html" class="btn btn-primary">Contact Us</a>
-  </div>
+      <p><strong>Indian MSME customers:</strong> Free consulting available until June 2025. Book via email.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
 
-  <div class="news-article">
-    <h3>Global Audit Checklist Solution</h3>
-    <p>Pre-built templates, actionable insights, scheduling, and detailed reporting in one platform.</p>
-    <a href="../contact.html" class="btn btn-primary">Contact Us</a>
-  </div>
+    <div class="news-article">
+      <h3>Global Audit Checklist Solution</h3>
+      <p>Features include templates, compliance tools, insights, scheduling, and reporting.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
 
-  <div class="news-article">
-    <h3>ADAM Consult with actfour technologies</h3>
-    <p>Enterprise products for budget control and global audit compliance.</p>
-    <a href="../contact.html" class="btn btn-primary">Contact Us</a>
-  </div>
+    <div class="news-article">
+      <h3>ADAM Consult with actfour technologies</h3>
+      <p>Enterprise products for budget control and audit compliance, including ERP integration and forecasting.</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
 
-  <div class="news-article">
-    <h3>ERP Solutions</h3>
-    <p>Modular, affordable ERP for growing businesses.</p>
-    <p>Visit: https://erp.adamconsult.com</p>
-    <a href="../contact.html" class="btn btn-primary">Contact Us</a>
-  </div>
+    <div class="news-article">
+      <h3>ERP Solutions</h3>
+      <p>Modular, affordable ERP system for growing businesses.</p>
+      <p>Visit: https://erp.adamconsult.com</p>
+      <a href="contact.html" class="btn btn-primary">Contact Us</a>
+    </div>
 
-  <div class="news-article">
-    <h3>ERP and shiftingsands Launch Visuals</h3>
-    <a href="/ERP.png" target="_blank">
-      <img src="ERP.png" alt="ERP Screenshot" style="max-width:100%; height:auto; border-radius:8px;">
-    </a>
-    <a href="/shiftingsands.png" target="_blank">
-      <img src="shiftingsands.png" alt="shiftingsands Screenshot" style="max-width:100%; height:auto; border-radius:8px; margin-top:20px;">
-    </a>
-    <h3>shiftingsands Brochure</h3>
-    <a href="https://drive.google.com/drive/folders/1RiUIZUtrbX0VkNGNtTHGtBwjqp-osXIx-" target="_blank" class="btn btn-primary">View shiftingsands</a>
-  </div>
-
-  <div class="news-article">
-    <h3>Green Initiatives</h3>
-    <p>ADAM Consult is developing Smart PUE Optimization and resilient energy storage for sustainable data centers.</p>
-    <a href="../contact.html" class="btn btn-primary">Contact Us</a>
-  </div>
-</section>
-
-</body>
-</html>
+    <div class="news-article">
+      <h3>ERP and shiftingsands Launch Visuals</h3>
+      <img src="ERP.png" alt="ERP Screenshot" />
+      <br /><br />
+      <img src="shiftingsands.png" alt="Shiftingsands Screenshot" style="margin-top: 20px;" />
+      <br /><br />
+      <h
 
 
     
